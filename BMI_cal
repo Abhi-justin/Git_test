@@ -1,0 +1,20 @@
+BMI Calculator (using data types and math operators)
+
+
+{{{{{ height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+h= float(height)
+w= int(weight)
+result = w / h ** 2
+rest_int = int(result)
+print(rest_int)
+
+
+—------------------------------------------------
+
+
+h = float(height)
+w = int(weight)
+result = w // h ** 2
+res=int(result)
+print(res)    }}}}}}

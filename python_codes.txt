@@ -1,0 +1,285 @@
+PEMDAS  Left to right
+P- Parentheses: ()
+E- Exponents: **
+M- Multiplication: *
+D- Division: /
+A- Addition: +
+S- Subtraction: -
+
+
+ROUND function: used to convert a float to whole numbers.
+Ex: print(round (8/3, 2))
+Ans: 2.67
+
+
+When // is used in place of /, whole number is displayed rather than a floating number..
+Ex: result = 4 / 2 (2.0 - float)
+Result = 4 //2 (2 - int)
+Print(result)
+
+
+To increment
+EX: score = o
+Score = score +1
+OR
+Score + (-,*,/) = 1 
+F-String
+prefix a string with the letter 'f' to create an f- string.
+SYNTAX: print(f”your score is {score}”)
+Here there is no need to specify the data types i.e, int, float…..
+
+
+
+
+
+
+
+
+
+
+==============================================================
+
+
+Code to add digits in a 2 digit number : converting to strings
+
+
+two = input("Type a two digit number: ")
+first = int(two[0])
+second = int(two[1])
+two_digit_number = (first + second)
+strings = str(two_digit_number)
+print ("the sum of first and second digit is " + strings)
+
+=====================================================================
+
+
+Print the length of the word
+
+
+name= len(input("Enter your name\n"))
+new_name=str(name)
+print("lenghts is: " + new_name)
+
+
+======================================================================
+
+
+
+
+BMI Calculator (using data types and math operators)
+
+
+{{{{{ height = input("enter your height in m: ")
+weight = input("enter your weight in kg: ")
+h= float(height)
+w= int(weight)
+result = w / h ** 2
+rest_int = int(result)
+print(rest_int)
+
+
+—------------------------------------------------
+
+
+h = float(height)
+w = int(weight)
+result = w // h ** 2
+res=int(result)
+print(res)    }}}}}}
+
+
+=======================================================================
+
+
+Create a program using maths and f-Strings 
+
+
+age = input("What is your current age? ")
+years = 90 - int(age)
+months = round(years * 12)
+weeks = round (years * 52)
+days = round(years * 365)
+#print(years)
+print(f"You will be {years} years
+and You have {days} days, {weeks} weeks, and {months} months left.")
+
+
+==========================================================================
+
+
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Round the result to 2 decimal places.
+print("Welcome to the tip calculator!")
+bill = float(input("What was the total bill? $"))
+tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
+people = int(input("How many people to split the bill?"))
+tip_as_percent = tip / 100
+total_tip_amount = bill * tip_as_percent
+total_bill = bill + total_tip_amount
+bill_per_person = total_bill / people
+final_amount = round(bill_per_person, 2)
+final_amount = “{:.2f}”. format(bill_per_person) #will print 2 decimals,i.e 35.60 instead of 35.6 
+# FAQ: How to round to 2 decimal places?
+# Find the answer in the Q&A here: https://www.udemy.com/course/100-days-of-code/learn/lecture/17965132#questions/13315048
+
+
+print(f"Each person should pay: ${final_amount}")
+
+
+
+
+Day:3
+Comparison Operators
+
+
+>, <, >=, <= == !=(not equals)
+
+
+print("welcome")
+height= int(input("enter your height in cm: "))
+if height >= 120:
+  print("proceed")
+else:
+  print("move on")
+  
+===========================================================
+Print odd or even using modulo(%)
+
+
+number = int(input("Which number do you want to check? "))
+
+
+if number % 2 == 0:
+   print("This is an even number.")
+else:
+   print("This is an odd number.")
+==============================================================
+
+
+Nested if statement
+
+
+if height >= 120:
+   print("can ride rollercoaster.")
+   if age >= 18:
+       print("pay $12")
+   else:
+           print("pay $7")
+
+
+  
+else:
+   print("move on.")
+IF - ELIF - ELSE statement
+
+
+height = int(input("Ënter your height in cm: "))
+if height >= 120:
+  
+   age = int(input ("Enter your age"))
+   if age <= 12:
+       print("pay $5")
+       print("enjoy the ride")
+   elif age >=13 and age <= 30:
+       print("pay $7")
+       print("enjoy the ride")
+   elif age >=31 and age <= 45:
+       print("pay $7")
+       print("enjoy the ride")
+
+
+else:
+   print("move on")
+
+
+
+
+BMI CALCULATOR 2.0
+My code
+
+
+{{{{{{{{{{{{# 🚨 Don't change the code below 👇
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
+# 🚨 Don't change the code above 👆
+
+
+#Write your code below this line 👇
+BMI_cal = weight / height ** 2
+BMI_value = round(BMI_cal)
+print (BMI_value)
+
+
+if BMI_value <= 18:
+   print("Your BMI is " + (BMI_value) + ", you are underweight.")
+elif BMI_value <= 22:
+        print("Your BMI is "(BMI_value), "you have a normal weight.")
+elif BMI_value <= 28:
+            print("Your BMI is "(BMI_value), "you are slightly overweight.")
+elif BMI_value <= 33:
+                 print("Your BMI is "(BMI_value), "you are obese.")
+else:
+    BMI_value >= 40
+   print("Your BMI is "(BMI_value), "you are clinically obese.")}}}}}
+ACTUAL CODE
+
+
+bmi = round(weight / height ** 2)
+if bmi < 18.5:
+ print(f"Your BMI is {bmi}, you are underweight.")
+elif bmi < 25:
+ print(f"Your BMI is {bmi}, you have a normal weight.")
+elif bmi < 30:
+ print(f"Your BMI is {bmi}, you are slightly overweight.")
+elif bmi < 35:
+ print(f"Your BMI is {bmi}, you are obese.")
+else:
+ print(f"Your BMI is {bmi}, you are clinically obese.")
+
+
+===========================================
+LEAP YEAR
+M1
+
+
+year = int(input("Which year do you want to check? "))
+if year % 4 == 0:
+   print("Leap year.")
+elif year % 100 == 0:
+       print("Leap year.")
+elif year % 400 == 0:
+        print("Leap year.")
+else:
+       print("Not leap year.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+M2
+
+
+year = int(input("Which year do you want to check? "))
+if year % 4 == 0:
+ if year % 100 == 0:
+   if year % 400 == 0:
+     print("Leap year.")
+   else:
+     print("Not leap year.")
+ else:
+   print("Leap year.")
+else:
+ print("Not leap year.")
+
+
+=================================================
